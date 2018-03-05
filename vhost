@@ -1,0 +1,7 @@
+<VirtualHost *:80>
+    ServerName myapp.localhost.com
+    DocumentRoot "/home/vagrant/projects/myapp/public"
+    <Directory "/home/vagrant/projects/myapp/public">
+        AllowOverride all
+    </Directory>
+</VirtualHost>
