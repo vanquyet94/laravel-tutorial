@@ -1,0 +1,7 @@
+# how to Setup Laravel 5 in Shared Hosting
+# I pasted the .htaccess file to the public directory.
+<IfModule mod_rewrite.c>
+	RewriteEngine On
+	RewriteCond %{REQUEST_URI} !^public
+	RewriteRule ^(.*)$ public/$1 [L]
+</IfModule>
